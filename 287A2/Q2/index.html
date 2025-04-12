@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+</head>
+<body>
+    <h2>JavaScript Array</h2>
+    <h3>Print the elements of an array using toString()</h3>
+    <p id="toString"></p>
+    <h3>Print the elements of an array using join()</h3>
+    <p id="join"></p>
+    <h3>Print the elements of an array in the format of index: value</h3>
+    <p id="indexValue"></p>
+    
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"]
+        document.getElementById("toString").textContent = fruits.toString()
+        document.getElementById("join").textContent = fruits.join('&')
+        document.getElementById("indexValue").innerHTML = fruits.map((fruit, index) => `${index}: ${fruit}`).join("<br>") 
+    </script>
+</body>
+</html>

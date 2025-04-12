@@ -1,0 +1,40 @@
+<h2>Have a Pet to Give Away</h2>
+
+<form class="giveaway-form" action="/giveaway" method="POST">
+    <label for="petType">Pet Type:</label>
+    <select id="petType" name="petType" required>
+        <option value="" disabled selected>Select your option</option>
+        <option>Dog</option>
+        <option>Cat</option>
+    </select>
+    <br>
+    <label for="breed">Breed:</label>
+    <input type="text" id="breed" name="breed" placeholder="Enter breed (include if it's a mix)" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required>
+    <br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+    
+    <label for="compatibility">Compatibility:</label>
+    <input type="checkbox" name="compatibility" value="dogs"> Dogs
+    <input type="checkbox" name="compatibility" value="cats"> Cats
+    <input type="checkbox" name="compatibility" value="children"> Children
+
+    <label for="ownerName">Current owner's name (both family and given name):</label>
+    <input type="text" id="ownerName" name="ownerName" required><br>
+
+    <label for="email">Current owner's Email:</label>
+    <input type="text" id="email" name="email" required><br>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment"></textarea>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+</form>

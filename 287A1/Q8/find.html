@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Dog/Cat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><h2>DogToGo</h2></td>
+                <td><a href="index.html"><img src="Images/dog-logo.png" alt="Dog logo" width = 100></a></td>
+            </tr>
+        </table>
+    </header>
+
+    <div class="container">
+            <ul class="sidebar">
+                <li class="inactive"><a class="link" href="index.html">Home</a></li>
+                <li class="inactive"><a class="link" href="browse.html">Browse Available Pets</a></li>
+                <li class="active"><a class="link" href="find.html">Find a Dog/Cat</a></li>
+                <li class="inactive"><a class="link" href="dog-care.html">Dog Care</a></li>
+                <li class="inactive"><a class="link" href="cat-care.html">Cat Care</a></li>
+                <li class="inactive"><a class="link" href="giveaway.html">Have a Pet to Give Away</a></li>
+                <li class="inactive"><a class="link" href="contact.html">Contact Us</a></li>
+            </ul>
+        
+        <main class="content find-pet-page">
+            <h2>Find Your Perfect Companion</h2>
+            <p>Fill out the form below to search for adoptable pets that match your preferences.</p>
+        
+            <div class="form-container">
+                <form id="dog-form" class="pet-form">
+                    <h5>Find a Dog</h5>
+                    <label for="dog-breed">Breed:</label>
+                    <select id="dog-breed" name="dog-breed">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="labrador">Labrador Retriever</option>
+                        <option value="golden-retriever">Golden Retriever</option>
+                        <option value="german-shepherd">German Shepherd</option>
+                        <option value="bulldog">Bulldog</option>
+                    </select><br>
+        
+                    <label for="dog-age">Preferred Age:</label>
+                    <select id="dog-age" name="dog-age">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="puppy">Puppy</option>
+                        <option value="young">Young (1-3 years)</option>
+                        <option value="adult">Adult (4-7 years)</option>
+                        <option value="senior">Senior (8+ years)</option>
+                    </select><br>
+        
+                    <label for="dog-gender">Preferred Gender:</label>
+                    <select id="dog-gender" name="dog-gender">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br>
+        
+                    <fieldset>
+                        <legend>Should the dog get along with:</legend>
+                        <label><input type="checkbox" name="dog-compatibility" value="dogs"> Dogs</label>
+                        <label><input type="checkbox" name="dog-compatibility" value="cats"> Cats</label>
+                        <label><input type="checkbox" name="dog-compatibility" value="children"> Small children</label>
+                    </fieldset>
+        
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+        
+                <form id="cat-form" class="pet-form">
+                    <h5>Find a Cat</h5>
+                    <label for="cat-breed">Breed:</label>
+                    <select id="cat-breed" name="cat-breed">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="persian">Persian</option>
+                        <option value="siamese">Siamese</option>
+                        <option value="maine-coon">Maine Coon</option>
+                        <option value="sphynx">Sphynx</option>
+                    </select><br>
+        
+                    <label for="cat-age">Preferred Age:</label>
+                    <select id="cat-age" name="cat-age">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="kitten">Kitten</option>
+                        <option value="young">Young (1-3 years)</option>
+                        <option value="adult">Adult (4-7 years)</option>
+                        <option value="senior">Senior (8+ years)</option>
+                    </select><br>
+        
+                    <label for="cat-gender">Preferred Gender:</label>
+                    <select id="cat-gender" name="cat-gender">
+                        <option value="any">Doesn’t matter</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+        
+                    <fieldset>
+                        <legend>Should the cat get along with:</legend>
+                        <label><input type="checkbox" name="cat-compatibility" value="dogs"> Dogs</label>
+                        <label><input type="checkbox" name="cat-compatibility" value="cats"> Cats</label>
+                        <label><input type="checkbox" name="cat-compatibility" value="children"> Small children</label>
+                    </fieldset>
+        
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DogToGo | <a class="privacy" id="link" href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>

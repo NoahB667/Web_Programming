@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Order Books Online</h2>
+    <fieldset>
+        <table>
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic Web Programming</td>
+                <td><input type="text" id="qty1" class="quantity" data-price="19.99"></td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td>Intro to PHP</td>
+                <td><input type="text" id="qty2" class="quantity" data-price="86.00"></td>
+                <td>$86.00</td>
+            </tr>
+            <tr>
+                <td>Advanced JQuery</td>
+                <td><input type="text" id="qty3" class="quantity" data-price="55.00"></td>
+                <td>$55.00</td>
+            </tr>
+        </table>
+    <br>
+    <button onclick="calculateTotal()">Calculate the order</button>
+    </fieldset>
+    <p id="orderSummary"></p>
+    <p id="finalTotal"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<h2>Find Your Perfect Companion</h2>
+<p>Fill out the form below to search for adoptable pets that match your preferences.</p>
+
+<div class="form-container">
+    <form id="dog-form" class="pet-form">
+        <h5>Find a Dog</h5>
+        <label for="dog-breed">Breed:</label>
+        <select id="dog-breed" name="dog-breed" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="labrador">Labrador Retriever</option>
+            <option value="golden-retriever">Golden Retriever</option>
+            <option value="german-shepherd">German Shepherd</option>
+            <option value="bulldog">Bulldog</option>
+        </select><br>
+
+        <label for="dog-age">Preferred Age:</label>
+        <select id="dog-age" name="dog-age" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="puppy">Puppy</option>
+            <option value="young">Young (1-3 years)</option>
+            <option value="adult">Adult (4-7 years)</option>
+            <option value="senior">Senior (8+ years)</option>
+        </select><br>
+
+        <label for="dog-gender">Preferred Gender:</label>
+        <select id="dog-gender" name="dog-gender" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <fieldset>
+            <legend>Should the dog get along with:</legend>
+            <label><input type="checkbox" name="dog-compatibility" value="dogs"> Dogs</label>
+            <label><input type="checkbox" name="dog-compatibility" value="cats"> Cats</label>
+            <label><input type="checkbox" name="dog-compatibility" value="children"> Small children</label>
+        </fieldset>
+
+        <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+
+    <form id="cat-form" class="pet-form">
+        <h5>Find a Cat</h5>
+        <label for="cat-breed">Breed:</label>
+        <select id="cat-breed" name="cat-breed" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="persian">Persian</option>
+            <option value="siamese">Siamese</option>
+            <option value="maine-coon">Maine Coon</option>
+            <option value="sphynx">Sphynx</option>
+        </select><br>
+
+        <label for="cat-age">Preferred Age:</label>
+        <select id="cat-age" name="cat-age">
+            <option value="" disabled selected required>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="kitten">Kitten</option>
+            <option value="young">Young (1-3 years)</option>
+            <option value="adult">Adult (4-7 years)</option>
+            <option value="senior">Senior (8+ years)</option>
+        </select><br>
+
+        <label for="cat-gender" required>Preferred Gender:</label>
+        <select id="cat-gender" name="cat-gender">
+            <option value="" disabled selected>Select your option</option>
+            <option value="any">Doesn’t matter</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <fieldset>
+            <legend>Should the cat get along with:</legend>
+            <label><input type="checkbox" name="cat-compatibility" value="dogs"> Dogs</label>
+            <label><input type="checkbox" name="cat-compatibility" value="cats"> Cats</label>
+            <label><input type="checkbox" name="cat-compatibility" value="children"> Small children</label>
+        </fieldset>
+
+        <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</div>
+
+<div class="pets-container">
+    <!-- Matching pets will be dynamically inserted here -->
+    <% if (typeof pets === 'undefined') { %>
+        <!-- Do nothing on the initial load -->
+    <% } else if (pets.length === 0) { %>
+        <p>No matching pets found. Please adjust your search criteria.</p>
+    <% } else { %>
+        <% pets.forEach(pet => { %>
+            <div class="pet-card">
+                <img src="<%= pet.image %>" alt="<%= pet.breed %>" class="pet-image">
+                <div class="pet-details">
+                    <h3><%= pet.name %></h3>
+                    <p><strong>Breed:</strong> <%= pet.breed %></p>
+                    <p><strong>Age:</strong> <%= pet.age %></p>
+                    <p><strong>Gender:</strong> <%= pet.gender %></p>
+                    <p><strong>Gets along with:</strong> <%= pet.compatibility.join(", ") %></p>
+                    <button>Interested</button>
+                </div>
+            </div>
+        <% }); %>
+    <% } %>
+</div>
+

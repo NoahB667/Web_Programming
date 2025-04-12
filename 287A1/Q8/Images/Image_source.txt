@@ -1,0 +1,2 @@
+dog-cat.jpg: https://st2.depositphotos.com/1707929/11745/i/450/depositphotos_117454358-stock-photo-dogs-and-cats-snuggle-together.jpg
+dog-logo.png: https://png.pngtree.com/png-vector/20230515/ourmid/pngtree-dog-icon-transparent-background-free-vector-png-image_7097867.png

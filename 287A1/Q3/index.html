@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><h2>Music Lover's Survey</h2></td>
+                <td>
+                    <a href="https://pngimg.com/image/22046">
+                        <img src="https://pngimg.com/d/music_notes_PNG38.png" alt="Image of Music Notes"  width="100">
+                    </a>
+                </td>
+            </tr>      
+        </table>
+        
+        <form>
+            <fieldset id="personal">
+                <legend>Music Lover's Personal information</legend>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname"><br><br>
+
+                <label for="famname">Family Name</label>
+                <input type="text" id="famname" name="famname"><br><br>
+
+                <label for="gender1">Gender:</label>
+                <label><input type="radio" id="gender1" name="gender" value="female"/>Female</label>
+                <label><input type="radio" id="gender2" name="gender" value="male"/>Male</label><br><br>
+
+                <label for="age">What age category are you from?</label>
+                <select name="age" id="age">
+                    <option value="lessthan18">Less than 18</option>
+                    <option value="18to25">18 to 25</option>
+                    <option value="26to39">26 to 39</option>
+                    <option value="40+">40+</option>
+                  </select><br><br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </fieldset><br>
+
+            <fieldset id="questions">
+                <legend>Survey Questions</legend>
+                <label for="musictype1">Which type of music do you listen to? (Pick as many as apply)</label><br> 
+                <label><input type="checkbox" id="musictype1" name="musictype" value="blues"/>Blues</label>
+                <label><input type="checkbox" id="musictype2" name="musictype" value="classical"/>Classical music</label>
+                <label><input type="checkbox" id="musictype3" name="musictype" value="electronic"/>Electronic Music</label><br>
+                <label><input type="checkbox" id="musictype4" name="musictype" value="hiphop"/>Hip Hop/Rap</label>
+                <label><input type="checkbox" id="musictype5" name="musictype" value="pop"/>Pop (Popular music)</label>
+                <label><input type="checkbox" id="musictype6" name="musictype" value="reggae"/>Reggae</label><br>
+                <label><input type="checkbox" id="musictype7" name="musictype" value="other"/>Other</label><br><br>
+
+                <label for="favorite1">List your 3 favorite artist/bands:</label><br>
+                <input type="text" id="favorite1" name="favorite">
+                <input type="text" id="favorite2" name="favorite">
+                <input type="text" id="favorite3" name="favorite"><br><br>
+
+                <label for="tickets1">If you were to win tickets which show would you like 2 tickets to?</label><br>
+                <label><input type="radio" id="tickets1" name="tickets" value="floyd"/>BRIT FLOYD (March 24, 2016)</label>
+                <label><input type="radio" id="tickets2" name="tickets" value="maiden"/>IRON MAIDEN (April 1, 2016)</label>
+                <label><input type="radio" id="tickets3" name="tickets" value="jackson"/>JANET JACKSON (June 17, 2016)</label>
+                <label><input type="radio" id="tickets4" name="tickets" value="adele"/>ADELE (September 30, 2016)</label>
+            </fieldset><br>
+
+            <p>Thank you for taking the time to fill out our survey!</p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        
+    </header>
+    
+</body>
+</html>

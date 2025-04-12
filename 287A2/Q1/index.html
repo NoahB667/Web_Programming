@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Tag</title>
+</head>
+<body>
+    <fieldset>
+        <h2>Use JavaScript to change HTML content</h2>
+        <p id="paragraph">The original content</p>
+        <button onclick="changeit()">Try it</button>
+    </fieldset>
+    <script>
+        function changeit() {
+            document.getElementById("paragraph").textContent = "Paragraph changed."
+        }
+    </script> 
+</body>
+</html>

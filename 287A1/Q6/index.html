@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+<style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+        }
+
+        li {
+            display: block;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #4cb050;
+            color: white;
+        }
+
+        .inactive {
+            background-color: lightgrey;
+            color: black;
+        }
+
+        .inactive:hover {
+            background-color: #555555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <p>"Home" is the current page. There are four menu items.</p>
+
+    <ul>
+        <li class="active">Home</li>
+        <li class="inactive">News</li>
+        <li class="inactive">Contact</li>
+        <li class="inactive">About</li>
+    </ul>
+</body>
+</html>

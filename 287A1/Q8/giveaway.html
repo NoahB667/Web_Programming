@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have a pet to give away</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><h2>DogToGo</h2></td>
+                <td><a href="index.html"><img src="Images/dog-logo.png" alt="Dog logo" width = 100></a></td>
+            </tr>
+        </table>
+    </header>
+
+    <div class="container">
+            <ul class="sidebar">
+                <li class="inactive"><a class="link" href="index.html">Home</a></li>
+                <li class="inactive"><a class="link" href="browse.html">Browse Available Pets</a></li>
+                <li class="inactive"><a class="link" href="find.html">Find a Dog/Cat</a></li>
+                <li class="inactive"><a class="link" href="dog-care.html">Dog Care</a></li>
+                <li class="inactive"><a class="link" href="cat-care.html">Cat Care</a></li>
+                <li class="active"><a class="link" href="giveaway.html">Have a Pet to Give Away</a></li>
+                <li class="inactive"><a class="link" href="contact.html">Contact Us</a></li>
+            </ul>
+       
+        <main class="content">
+            <h2>Have a Pet to Give Away</h2>
+                <form class="pet-form">
+                    <label>Pet Type:</label>
+                    <select>
+                        <option>Dog</option>
+                        <option>Cat</option>
+                    </select>
+                    <br>
+                    <label>Breed:</label>
+                    <input type="text"  placeholder="Enter breed (include if it's a mix)">
+                    <br>
+                    <label>Age:</label>
+                    <select>
+                        <option>0-1 years</option>
+                        <option>1-5 years</option>
+                        <option>5+ years</option>
+                    </select>
+                    <br>
+                    <label>Gender:</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select><br><br>
+                    
+                    <label for="alongdogs"><input type="checkbox" id="alongdogs" name="alongdogs" value="yes">Gets along with other dogs</label>
+                    <label for="alongcats"><input type="checkbox" id="alongcats" name="alongcats" value="yes">Gets along with other cats</label>
+                    <label for="alongfamily"><input type="checkbox" id="alongfamily" name="alongfamily" value="yes">Suitable for a family with small children</label><br>
+                    <label>Current owner's name (both family and given name):</label>
+                    <input type="text"><br>
+                    <label for="email">Current owner's Email:</label>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DogToGo | <a class="privacy" id="link" href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>
