@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("partials/header"); -%>
+    <div class="container">
+        <ul class="sidebar">
+            <li class="<%= currentPage === 'home' ? 'active' : '' %>"><a href="/">Home</a></li>
+            <li class="<%= currentPage === 'find' ? 'active' : '' %>"><a href="/find">Find a Dog/Cat</a></li>
+            <li class="<%= currentPage === 'dog-care' ? 'active' : '' %>"><a href="/dog-care">Dog Care</a></li>
+            <li class="<%= currentPage === 'cat-care' ? 'active' : '' %>"><a href="/cat-care">Cat Care</a></li>
+            <li class="<%= currentPage === 'account' ? 'active' : '' %>"><a href="/account">Create an account</a></li>
+            <li class="<%= currentPage === 'giveaway' ? 'active' : '' %>"><a href="/giveaway">Have a Pet to Give Away</a></li>
+            <li class="<%= currentPage === 'logout' ? 'active' : '' %>"><a href="/logout">LogOut</a></li>
+            <li class="<%= currentPage === 'contact' ? 'active' : '' %>"><a href="/contact">Contact Us</a></li>
+        </ul>
+
+        <main class="content">
+            <%- body %>
+        </main>
+    </div>
+    <%- include("partials/footer"); -%>
+</body>
+</html>

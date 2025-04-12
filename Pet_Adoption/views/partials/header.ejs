@@ -1,0 +1,16 @@
+<header>
+    <table>
+        <tr>
+            <td><h2>DogToGo</h2></td>
+            <td><a href="/"><img src="/Images/dog-logo.png" alt="Dog logo" width="100"></a></td>
+            <td><h3 id="dateTime">Time</h3></td>
+        </tr>
+    </table>
+    <script>
+        function updateTime() {
+            document.getElementById('dateTime').innerText = new Date().toLocaleString();
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</header>
